@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CharacterManagerMainWindow</class>
+ <widget class="QMainWindow" name="CharacterManagerMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>855</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>950</width>
+    <height>855</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>950</width>
+    <height>855</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Heimurinn Karakter Menedzser</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="character_sheet_tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>950</width>
+      <height>820</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>950</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Fájl</string>
+    </property>
+    <addaction name="action_new_character_sheet"/>
+    <addaction name="action_save_character_sheet"/>
+    <addaction name="action_save_all_character_sheets"/>
+    <addaction name="separator"/>
+    <addaction name="action_delete_current_character_sheet"/>
+    <addaction name="separator"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Segítség</string>
+    </property>
+    <addaction name="action_about"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="action_new_character_sheet">
+   <property name="text">
+    <string>Új karakterlap</string>
+   </property>
+  </action>
+  <action name="action_save_character_sheet">
+   <property name="text">
+    <string>Karakterlap mentése</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_save_all_character_sheets">
+   <property name="text">
+    <string>Összes karakterlap mentése</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>Kilépés</string>
+   </property>
+  </action>
+  <action name="action_delete_current_character_sheet">
+   <property name="text">
+    <string>Jelenlegi karakterlap törlése</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>Névjegy</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

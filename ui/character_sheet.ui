@@ -1,0 +1,2069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CharacterSheet</class>
+ <widget class="QWidget" name="CharacterSheet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>950</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>950</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QToolBox" name="character_sheet_toolBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>951</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="character_sheet_toolBoxPage1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>951</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Alap információk</string>
+    </attribute>
+    <widget class="QGroupBox" name="attributes_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>130</y>
+       <width>211</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Tulajdonságok</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>191</width>
+        <height>188</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="strength_label">
+           <property name="text">
+            <string>Erő</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="strength_spinBox">
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>22</number>
+           </property>
+           <property name="value">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="strength_mod_spinBox">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+           </property>
+           <property name="minimum">
+            <number>-3</number>
+           </property>
+           <property name="maximum">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="dexterity_label">
+           <property name="text">
+            <string>Ügyesség</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="dexterity_spinBox">
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>22</number>
+           </property>
+           <property name="value">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="dexterity_mod_spinBox">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+           </property>
+           <property name="minimum">
+            <number>-3</number>
+           </property>
+           <property name="maximum">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QLabel" name="stamina_label">
+           <property name="text">
+            <string>Állóképesség</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="stamina_spinBox">
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>22</number>
+           </property>
+           <property name="value">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="stamina_mod_spinBox">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+           </property>
+           <property name="minimum">
+            <number>-3</number>
+           </property>
+           <property name="maximum">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLabel" name="intelligence_label">
+           <property name="text">
+            <string>Intelligencia</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="intelligence_spinBox">
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>22</number>
+           </property>
+           <property name="value">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="intelligence_mod_spinBox">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+           </property>
+           <property name="minimum">
+            <number>-3</number>
+           </property>
+           <property name="maximum">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QLabel" name="wisdom_label">
+           <property name="text">
+            <string>Bölcsesség</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="wisdom_spinBox">
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>22</number>
+           </property>
+           <property name="value">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="wisdom_mod_spinBox">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+           </property>
+           <property name="minimum">
+            <number>-3</number>
+           </property>
+           <property name="maximum">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="charisma_label">
+           <property name="text">
+            <string>Karizma</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="charisma_spinBox">
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>22</number>
+           </property>
+           <property name="value">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="charisma_mod_spinBox">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+           </property>
+           <property name="minimum">
+            <number>-3</number>
+           </property>
+           <property name="maximum">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="health_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>130</y>
+       <width>161</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Életerő (ÉP)</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>137</width>
+        <height>112</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QSpinBox" name="health_spinBox">
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QLabel" name="health_max_label">
+             <property name="text">
+              <string>ÉP max</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="health_max_spinBox"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QLabel" name="cold_resistance_label">
+             <property name="text">
+              <string>Hidegtűrés</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="cold_resistance_spinBox"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="background_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>10</y>
+       <width>451</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Háttér és módosítói</string>
+     </property>
+     <widget class="QTextEdit" name="background_textEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>431</width>
+        <height>91</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="baseinfo_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>481</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Alap információk</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>464</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="name_label">
+           <property name="text">
+            <string>Név</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="name_lineEdit"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="class_label">
+           <property name="text">
+            <string>Osztály</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="class_comboBox"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="clan_label">
+           <property name="text">
+            <string>Klán</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="clan_lineEdit"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="level_label">
+           <property name="text">
+            <string>Szint</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="level_spinBox">
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="exp_label">
+           <property name="text">
+            <string>TP</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="exp_spinBox">
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+           </property>
+           <property name="maximum">
+            <number>1305</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="fame_label">
+           <property name="text">
+            <string>Hírnév</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="fame_spinBox">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="faith_label">
+           <property name="text">
+            <string>Vallás</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="faith_lineEdit"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="fate_label">
+           <property name="text">
+            <string>Sorspont</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="fate_spinBox">
+           <property name="maximum">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="skills_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>130</y>
+       <width>551</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Jártasságok</string>
+     </property>
+     <widget class="QTableWidget" name="skills_tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>531</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SelectionMode::ExtendedSelection</enum>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <property name="supportedDragActions">
+       <set>Qt::DropAction::MoveAction</set>
+      </property>
+      <column>
+       <property name="text">
+        <string>Jártasság</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Tulajdonság</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Szint</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Egyéb</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Összes</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="add_skill_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>151</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Jártasság hozzáadása</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_skill_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>330</y>
+        <width>121</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Jártasság törlése</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListRemove"/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="character_sheet_toolBoxPage2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>96</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Kezdeményező, Támadó, Védő, Mentődobások és Képességek</string>
+    </attribute>
+    <widget class="QGroupBox" name="abilities_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>270</y>
+       <width>291</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Képességek</string>
+     </property>
+     <widget class="QListWidget" name="abilites_listWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>271</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_ability_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>151</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Képesség hozzáadása</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_ability_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>190</y>
+        <width>121</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Képesség törlése</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListRemove"/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="initiative_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>291</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Kezdeményezés (KÉ)</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>275</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <item>
+        <widget class="QLabel" name="initiative_base_label">
+         <property name="text">
+          <string>Alap</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="initiative_base_spinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="initiative_other_label">
+         <property name="text">
+          <string>Egyéb</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="initiative_other_spinBox">
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::UpDownArrows</enum>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="initiative_all_label">
+         <property name="text">
+          <string>Összes</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="initiative_all_spinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="defense_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>291</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Védekezés (VÉ)</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>20</y>
+        <width>290</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_14">
+         <item>
+          <widget class="QLabel" name="defense_base_label">
+           <property name="text">
+            <string>Alap</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="defense_base_spinBox">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+           </property>
+           <property name="minimum">
+            <number>-10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="defense_shield_label">
+           <property name="text">
+            <string>Pajzs</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="defense_shield_spinBox"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="defense_other_label">
+           <property name="text">
+            <string>Egyéb</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="defense_other_spinBox"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item>
+          <widget class="QLabel" name="defense_all_label">
+           <property name="text">
+            <string>Összes</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="defense_all_spinBox">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="armor_shield_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>150</y>
+       <width>291</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Páncél és Pajzs</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>271</width>
+        <height>92</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <item>
+          <widget class="QLabel" name="armor_label">
+           <property name="text">
+            <string>Páncél</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="armor_lineEdit"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="armor_rating_label">
+           <property name="text">
+            <string>SFÉ</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="armor_rating_spinBox"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item>
+          <widget class="QLabel" name="helmet_label">
+           <property name="text">
+            <string>Sisak</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="helmet_lineEdit"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="helmet_rating_label">
+           <property name="text">
+            <string>SFÉ</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="helmet_rating_spinBox"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_18">
+         <item>
+          <widget class="QLabel" name="shield_label">
+           <property name="text">
+            <string>Pajzs</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="shield_lineEdit"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="shield_break_label">
+           <property name="text">
+            <string>Törés</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="shield_break_spinBox"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="attack_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>10</y>
+       <width>641</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Támadás (TÉ)</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>268</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <item>
+        <widget class="QLabel" name="close_combat_attack_label">
+         <property name="text">
+          <string>Közelharci</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="close_combat_attack_spinBox">
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="ranged_combat_attack_label">
+         <property name="text">
+          <string>Távolsági</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="ranged_combat_attack_spinBox">
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+         <property name="maximum">
+          <number>103</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="weapons_tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>621</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="supportedDragActions">
+       <set>Qt::DropAction::MoveAction</set>
+      </property>
+      <column>
+       <property name="text">
+        <string>Fegyver</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Kapcsolt tulajdonság</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Kritikus</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Sebzés</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Speciális</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="add_weapon_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>141</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fegyver hozzáadása</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_weapon_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>310</y>
+        <width>121</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fegyver törlése</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListRemove"/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="save_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>350</y>
+       <width>301</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Mentődobások</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>285</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="7" column="1">
+        <widget class="QSpinBox" name="willpower_save_base_spinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QSpinBox" name="constitution_save_other_spinBox">
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QSpinBox" name="reflex_save_other_spinBox">
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QSpinBox" name="reflex_save_base_spinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="reflex_save_label">
+         <property name="text">
+          <string>Reflex</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLabel" name="save_all_label">
+         <property name="text">
+          <string>Összes</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="save_other_label">
+         <property name="text">
+          <string>Egyéb</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="constitution_save_label">
+         <property name="text">
+          <string>Kitartás</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QSpinBox" name="constitution_save_all_spinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QSpinBox" name="constitution_save_base_spinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="willpower_save_label">
+         <property name="text">
+          <string>Akarat</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QSpinBox" name="willpower_save_other_spinBox">
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <widget class="QSpinBox" name="reflex_save_all_spinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="4">
+        <widget class="QSpinBox" name="willpower_save_all_spinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="save_base_label">
+         <property name="text">
+          <string>Alap</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="character_sheet_toolBoxPage3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>96</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Felszerelés, pénz és hírnév</string>
+    </attribute>
+    <widget class="QGroupBox" name="equipment_money_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>941</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Felszerelés és pénz</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>20</y>
+        <width>77</width>
+        <height>104</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QLabel" name="money_silver_label">
+           <property name="text">
+            <string>Ezüst</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="money_silver_spinBox">
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+           </property>
+           <property name="maximum">
+            <number>999</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="QLabel" name="money_iron_label">
+           <property name="text">
+            <string>Vas</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="money_iron_spinBox">
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::ButtonSymbols::PlusMinus</enum>
+           </property>
+           <property name="maximum">
+            <number>999</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>20</y>
+        <width>231</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="small_item_label">
+         <property name="text">
+          <string>Helyet nem foglaló apróságok</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="small_items_listWidget"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="equipment_tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>591</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SelectionMode::ExtendedSelection</enum>
+      </property>
+      <property name="supportedDragActions">
+       <set>Qt::DropAction::MoveAction</set>
+      </property>
+      <column>
+       <property name="text">
+        <string>Mennyiség</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Terhelés</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Megnevezés</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="add_equipment_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>161</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Felszerelés hozzáadása</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_equipment_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>220</y>
+        <width>131</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Felszerelés törlése</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListRemove"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_small_item_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>220</y>
+        <width>131</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tárgy hozzáadása</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_small_item_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>220</y>
+        <width>101</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tárgy törlése</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListRemove"/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>220</y>
+        <width>180</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_20">
+       <item>
+        <widget class="QLabel" name="encumbrance_label">
+         <property name="text">
+          <string>Teherbírás</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="current_encumbrance_doubleSpinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="slash_separator_label">
+         <property name="text">
+          <string>/</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="max_encumbrance_doubleSpinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+         <property name="showGroupSeparator" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="fame_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>260</y>
+       <width>941</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Dicső és dicstelen tettek</string>
+     </property>
+     <widget class="QTableWidget" name="fame_tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>771</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="supportedDragActions">
+       <set>Qt::DropAction::MoveAction</set>
+      </property>
+      <column>
+       <property name="text">
+        <string>Dicső/Dicstelen</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Érték</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Leírás</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="add_fame_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>20</y>
+        <width>141</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hírnév hozzáadása</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_fame_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>50</y>
+        <width>141</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hírnév törlése</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListRemove"/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="character_sheet_toolBoxPage4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>96</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Mágia</string>
+    </attribute>
+    <widget class="QGroupBox" name="magic_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>941</width>
+       <height>481</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Mágia</string>
+     </property>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>301</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="2">
+        <widget class="QSpinBox" name="max_level_2_spinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="available_spells_label">
+         <property name="text">
+          <string>Elérhető</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="max_spells_label">
+         <property name="text">
+          <string>Max</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="max_level_1_spinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QSpinBox" name="max_level_3_spinBox">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="level_3_label">
+         <property name="text">
+          <string>III: szint</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="level_2_label">
+         <property name="text">
+          <string>II. szint</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="level_1_label">
+         <property name="text">
+          <string>I. szint</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="available_level_1_spinBox"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QSpinBox" name="available_level_2_spinBox"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QSpinBox" name="available_level_3_spinBox"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>611</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_11">
+       <item>
+        <widget class="QLabel" name="spell_list_label">
+         <property name="text">
+          <string>Ismert varázslatok</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="spell_list_tableWidget">
+         <property name="editTriggers">
+          <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+         </property>
+         <column>
+          <property name="text">
+           <string>Szint</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Megnevezés</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Leírás</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="add_spell_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>420</y>
+        <width>151</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Varázslat hozzáadása</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_spell_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>450</y>
+        <width>121</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Varázslat törlése</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::ListRemove"/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QListWidget" name="roll_history_listWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>620</y>
+     <width>381</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="autoScroll">
+    <bool>true</bool>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="dice_roller_groupBox">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>700</y>
+     <width>301</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Kockadobás</string>
+   </property>
+   <widget class="QPushButton" name="dice_roll_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>60</y>
+      <width>81</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dobás</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>281</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_24">
+     <item>
+      <widget class="QSpinBox" name="dice_number_spinBox">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="dice_sign_label">
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>D</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="dice_side_spinBox">
+       <property name="minimum">
+        <number>2</number>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>6</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="plus_sign_label">
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="dice_modifier_spinBox">
+       <property name="minimum">
+        <number>-20</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>620</y>
+     <width>241</width>
+     <height>166</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_12">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_19">
+      <item>
+       <widget class="QComboBox" name="attack_test_comboBox"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="attack_test_pushButton">
+        <property name="text">
+         <string>Támadás</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_21">
+      <item>
+       <widget class="QComboBox" name="defense_test_comboBox"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="defense_test_pushButton">
+        <property name="text">
+         <string>Védekezés</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_22">
+      <item>
+       <widget class="QComboBox" name="attribute_test_comboBox"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="attribute_test_pushButton">
+        <property name="text">
+         <string>Tulajdonság próba</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_23">
+      <item>
+       <widget class="QComboBox" name="skill_test_comboBox"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="skill_test_pushButton">
+        <property name="text">
+         <string>Jártasság próba</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_25">
+      <item>
+       <widget class="QComboBox" name="save_test_comboBox"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="save_test_pushButton">
+        <property name="text">
+         <string>Mentődobás</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>620</y>
+     <width>87</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_13">
+    <item>
+     <widget class="QLabel" name="modifier_label">
+      <property name="text">
+       <string>Próba módosító</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="modifier_spinBox">
+      <property name="minimum">
+       <number>-20</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
