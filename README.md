@@ -18,5 +18,18 @@ Ez az asztali alkalmazás lehetővé teszi [Heimurinn](https://heimurinn.hu/) ka
 - Képességek hatásait nem kezeli azok sokasága miatt
 - A hírnevet nem kezeli szigorúan 100-as skálán
 
-## Technikai jellemzők
-Az alkalmazás **Python 3.14.0**-ben íródott **PySide6 6.10.2** és **sqlite3** használatával.
+## Használat
+Az alkalmazás nem igényel telepítést. Csak töltsd le az előre buildelt .exe fájlt, és futtasd.
+Az első indításnál létrehozza a **db.sqlite** adatbázist.
+
+### Saját build forráskódból
+Ha magad buildelnéd a forráskódból, azt is megtheted.
+
+> {!NOTE}
+> Az alkalmazás **Python 3.14.0** használatával készült.
+
+Töltsd le a forráskódot, és futtasd a következőket:
+'''
+pip install -r requirements.txt
+pyinstaller --windowed --onefile main.py
+'''
