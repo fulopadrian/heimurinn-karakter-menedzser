@@ -71,14 +71,32 @@ class MainWindow(QMainWindow, Ui_CharacterManagerMainWindow):
 
     def show_about(self):
         """Show the about message box"""
+        
         about_text = f"""
 <b>{APP_INFO['name']}</b><br>
 Verzió: {APP_INFO['version']}<br>
 Kiadás dátuma: {APP_INFO['release_date']}<br>
 <br>
 <b>Készítő:</b> {APP_INFO['creator']}<br>
+<br>
+{self.__build_contact_information()}
 """
         QMessageBox.about(self, "Névjegy", about_text)
+
+
+    def __build_contact_information(self):
+        """Build contact information"""
+
+        contact_html = ""
+        if APP_INFO.get("contact"):
+            contact_html = "<b>Kapcsolatok:</b><br>"
+            for contact_name, contact_value in APP_INFO["contact"].items():
+                if contact_value.startswith("http://") or contact_value.startswith("https://"):
+                    contact_html += f"{contact_name}: <a href='{contact_value}'>{contact_value}</a><br>"
+                else:
+                    contact_html += f"{contact_name}: {contact_value}<br>"
+
+        return contact_html
 
 
     def load_characters(self):
