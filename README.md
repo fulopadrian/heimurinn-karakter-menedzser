@@ -19,17 +19,17 @@ Ez az asztali alkalmazás lehetővé teszi [Heimurinn](https://heimurinn.hu/) ka
 - A hírnevet nem kezeli szigorúan 100-as skálán
 
 ## Használat
-Az alkalmazás nem igényel telepítést. Csak töltsd le az előre buildelt .exe fájlt, és futtasd.
+Az alkalmazás nem igényel telepítést. Csak töltsd le az előre buildelt fájlt, és futtasd.
 Az első indításnál létrehozza a **db.sqlite** adatbázist.
 
 ### Saját build forráskódból
 Ha magad buildelnéd a forráskódból, azt is megtheted.
 
-> {!NOTE}
+> [!NOTE]
 > Az alkalmazás **Python 3.14.0** használatával készült.
 
 Töltsd le a forráskódot, és futtasd a következőket:
-'''
+```
 pip install -r requirements.txt
 pyinstaller --windowed --onefile main.py
-'''
+```
