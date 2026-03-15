@@ -1,5 +1,3 @@
-"""Attributes management functionality for character sheet"""
-
 from functools import partial
 from settings import ATTRIBUTE_MODIFIERS
 

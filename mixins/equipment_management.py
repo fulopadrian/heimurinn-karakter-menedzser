@@ -1,7 +1,4 @@
-"""Equipment management functionality for character sheet"""
-
 from PySide6.QtWidgets import QTableWidgetItem
-
 from dialogs.add_update_equipment_dialog import AddUpdateEquipmentDialog
 
 

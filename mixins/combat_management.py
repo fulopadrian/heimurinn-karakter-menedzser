@@ -1,8 +1,5 @@
-"""Combat and attributes management functionality for character sheet"""
-
 from typing import Union
 from settings import CLASS_OPTIONS, LEVELING
-
 from dialogs.skald_attack_defense_options_dialog import SkaldAttackDefenseOptionsDialog
 
 
