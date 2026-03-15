@@ -1,3 +1,5 @@
+SKALD_ATTACK_DEFENSE_OPTION_RULE = "Induláskor a Szkald dönthet úgy, hogy Támadás vagy Védekezés alapértékét a 'jó' oszlop alapján fejleszti, ha cserébe végleg lemond napi 1 varázsdalról."
+
 CLASS_OPTIONS = {
     "Harcos": {
         "attack": "good",

@@ -1,3 +1,4 @@
+from typing import Union
 from PySide6.QtWidgets import (
     QWidget,
     QSpinBox,
@@ -50,7 +51,9 @@ class CharacterSheet(
         
         self.setupUi(self)
 
+        self.character_is_loading = False # Indicates if the app is loading a character
         self.character_data = character_data
+        self.skald_attack_defense_priority: Union[dict, None] = None
 
         # Setup
         # Initialize UI components
@@ -198,6 +201,8 @@ class CharacterSheet(
         """Collect all character data from UI components and return as a dictionary"""
 
         character_data = {
+            "skald_attack_defense_priority": self.skald_attack_defense_priority,
+
             # Basic info
             "name": self.name_lineEdit.text(),
             "class": self.class_comboBox.currentText(),
@@ -337,11 +342,27 @@ class CharacterSheet(
         return character_data
 
 
+    def character_loading(func):
+        """Decorator for loading characters"""
+
+        def wrapper(self, *args, **kwargs):
+            self.character_is_loading = True
+            func(self, *args, **kwargs)
+            self.character_is_loading = False
+
+        return wrapper
+
+
+    @character_loading
     def load_character_data(self, data: dict) -> None:
         """Load character data from a dictionary and set UI components accordingly"""
 
         if not data:
             return
+
+        # Get Szkald specific attack/defense grades and update them
+        self.skald_attack_defense_priority = data.get("skald_attack_defense_priority", None)
+        self.update_class_attack_defense_grade("Szkald", self.skald_attack_defense_priority)
 
         # Basic info
         self.name_lineEdit.setText(data.get("name", ""))
