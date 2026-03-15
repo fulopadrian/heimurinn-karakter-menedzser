@@ -1,7 +1,4 @@
-"""Abilities management functionality for character sheet"""
-
 from PySide6.QtWidgets import QListWidgetItem
-
 from dialogs.add_update_ability_dialog import AddUpdateAbilityDialog
 
 

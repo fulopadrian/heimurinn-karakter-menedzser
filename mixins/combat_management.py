@@ -1,6 +1,6 @@
-"""Combat and attributes management functionality for character sheet"""
-
+from typing import Union
 from settings import CLASS_OPTIONS, LEVELING
+from dialogs.skald_attack_defense_options_dialog import SkaldAttackDefenseOptionsDialog
 
 
 class CombatManagement:
@@ -8,6 +8,10 @@ class CombatManagement:
 
     def connect_combat_value_signals(self):
         """Connect signals for combat value updates"""
+
+        # Show Szkald attack/defense priority dialog if class choosen
+        if not self.skald_attack_defense_priority:
+            self.class_comboBox.currentTextChanged.connect(self.set_skald_attack_defense_priority)
 
         # Update combat values when character class change
         self.class_comboBox.currentTextChanged.connect(self.update_combat_values)
@@ -21,12 +25,42 @@ class CombatManagement:
         self.initiative_other_spinBox.valueChanged.connect(self.update_combat_values)
 
 
+    def set_skald_attack_defense_priority(self):
+        """Set attack or defense priority for Szkald characters"""
+
+        # Get character class
+        character_class: str = self.class_comboBox.currentText()
+
+        if not self.character_is_loading and character_class == "Szkald":
+            dialog = SkaldAttackDefenseOptionsDialog(self)
+
+            if dialog.exec() == 1:  # QDialog.Accepted
+                choosen_options = dialog.get_attack_defense_option()
+
+                # Update attack and defense grades
+                self.update_class_attack_defense_grade(character_class, choosen_options)
+
+                self.skald_attack_defense_priority = choosen_options
+        else:
+            self.skald_attack_defense_priority = None
+
+
+    def update_class_attack_defense_grade(self, character_class: str, grade_data: Union[dict, None]):
+        """Update attack and defense grade for choosen character class"""
+
+        if not grade_data:
+            return
+
+        for key, grade in grade_data.items():
+            CLASS_OPTIONS[character_class][key] = grade
+
+
     def update_combat_values(self):
         """Update the combat values (initiative, defense and attack) based on the character's class, level and attributes"""
 
         # Get the character's class, level and relevant attribute modifiers
         character_class: str = self.class_comboBox.currentText()
-        character_class_data = CLASS_OPTIONS.get(character_class, {})
+        character_class_data: dict = CLASS_OPTIONS.get(character_class, {})
         character_class_attack_grade = character_class_data.get("attack", "bad")
         character_class_defense_grade = character_class_data.get("defense", "bad")
 

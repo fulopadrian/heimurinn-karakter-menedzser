@@ -1,6 +1,3 @@
-"""Shared attribute helper methods for character sheet"""
-
-
 class AttributeHelpers:
     """Mixin class providing reusable attribute helper methods"""
 

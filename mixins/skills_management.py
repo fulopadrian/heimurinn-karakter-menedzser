@@ -1,7 +1,4 @@
-"""Skills management functionality for character sheet"""
-
 from PySide6.QtWidgets import QTableWidgetItem
-
 from dialogs.add_update_skill_dialog import AddUpdateSkillDialog
 
 

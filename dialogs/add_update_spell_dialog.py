@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QDialog, QDialogButtonBox, QLineEdit, QSpinBox, QTableWidgetItem
+from PySide6.QtWidgets import QDialog, QTableWidgetItem
 from ui.add_update_spell_dialog_ui import Ui_AddUpdateSpellDialog
 
 class AddUpdateSpellDialog(QDialog, Ui_AddUpdateSpellDialog):

@@ -1,8 +1,5 @@
-"""Magic/Spell management functionality for character sheet"""
-
 from PySide6.QtWidgets import QTableWidgetItem
 from functools import partial
-
 from dialogs.add_update_spell_dialog import AddUpdateSpellDialog
 from settings import CLASS_OPTIONS
 
