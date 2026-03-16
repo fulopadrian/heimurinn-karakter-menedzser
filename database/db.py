@@ -6,7 +6,7 @@ from typing import Optional, List, Dict, Any
 class Database:
     """SQLite database handler for character sheets"""
 
-    def __init__(self, db_path: str = "db.sqlite"):
+    def __init__(self, db_path: str = "hkm.db"):
         """Initialize the database connection and create tables if needed
         
         Args:

@@ -20,7 +20,7 @@ Ez az asztali alkalmazás lehetővé teszi [Heimurinn](https://heimurinn.hu/) ka
 
 ## Használat
 Az alkalmazás nem igényel telepítést. Csak töltsd le az előre buildelt fájlt, és futtasd.
-Az első indításnál létrehozza a **db.sqlite** adatbázist.
+Az első indításnál létrehozza a **hkm.db** adatbázist.
 
 ### Saját build forráskódból
 Ha magad buildelnéd a forráskódból, azt is megtheted.

@@ -10,7 +10,7 @@ def main() -> int:
     app = QApplication(sys.argv)
     
     # Initialize database
-    db = Database("db.sqlite")
+    db = Database("hkm.db")
     
     # Create main window with database reference
     main_window = MainWindow(db)
