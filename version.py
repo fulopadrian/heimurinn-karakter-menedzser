@@ -1,7 +1,7 @@
 APP_INFO = {
     "name": "Heimurinn Karakter Menedzser",
-    "version": "1.0.0-beta.1",
-    "release_date": "2026-03-06",
+    "version": "1.0.0-beta.2",
+    "release_date": "2026-03-17",
     "creator": "Fülöp Adrián (Hypnos, Balor, A Belső Szoba Lakója)",
     "contact": {
         "Github": "https://github.com/fulopadrian/heimurinn-karakter-menedzser"
