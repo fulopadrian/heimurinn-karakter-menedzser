@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QDialog, QDialogButtonBox, QLineEdit, QSpinBox, QTableWidgetItem, QComboBox
+from PySide6.QtWidgets import QDialog, QTableWidgetItem
 from ui.add_update_weapon_dialog_ui import Ui_AddUpdateWeaponDialog
 
 class AddUpdateWeaponDialog(QDialog, Ui_AddUpdateWeaponDialog):

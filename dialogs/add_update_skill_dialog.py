@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QDialog, QDialogButtonBox, QComboBox, QSpinBox, QTableWidgetItem
+from PySide6.QtWidgets import QDialog, QTableWidgetItem
 from ui.add_update_skill_dialog_ui import Ui_AddUpdateSkillDialog
 
 from settings import SKILLS

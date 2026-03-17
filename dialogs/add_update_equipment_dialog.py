@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QDialog, QDialogButtonBox, QLineEdit, QSpinBox, QDoubleSpinBox, QTableWidgetItem
+from PySide6.QtWidgets import QDialog, QTableWidgetItem
 from ui.add_update_equipment_dialog_ui import Ui_AddUpdateEquipmentDialog
 
 class AddUpdateEquipmentDialog(QDialog, Ui_AddUpdateEquipmentDialog):

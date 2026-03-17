@@ -1,7 +1,4 @@
-"""Small items management functionality for character sheet"""
-
 from PySide6.QtWidgets import QListWidgetItem
-
 from dialogs.add_update_small_item_dialog import AddUpdateSmallItemDialog
 
 
